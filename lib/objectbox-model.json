@@ -1,0 +1,237 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1537364093189943718",
+      "lastPropertyId": "10:5130466555066568642",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:75063440177180702",
+          "name": "userId",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2780638061285874119",
+          "name": "user_id",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "1:3901837056086444815"
+        },
+        {
+          "id": "3:5670829473773614304",
+          "name": "profileImage",
+          "type": 9
+        },
+        {
+          "id": "4:4686285922703134310",
+          "name": "contact",
+          "type": 9
+        },
+        {
+          "id": "5:6791047599763326564",
+          "name": "fullname",
+          "type": 9
+        },
+        {
+          "id": "6:3849855523097804110",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "7:8747881320487123582",
+          "name": "role",
+          "type": 9
+        },
+        {
+          "id": "8:2784538121833316488",
+          "name": "username",
+          "type": 9
+        },
+        {
+          "id": "9:5161757617587034282",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "10:5130466555066568642",
+          "name": "forgetPassword",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7254364336792141552",
+      "lastPropertyId": "6:7589873341742566118",
+      "name": "Floor",
+      "properties": [
+        {
+          "id": "1:4648694455163961992",
+          "name": "floor_id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:9206603069266882337",
+          "name": "floorId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "6:8632783633628871136"
+        },
+        {
+          "id": "4:6513881251972162126",
+          "name": "vehicleId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:4564424968792485642",
+          "relationTarget": "VehicleCategory"
+        },
+        {
+          "id": "5:5651325556497992101",
+          "name": "floorNum",
+          "type": 9
+        },
+        {
+          "id": "6:7589873341742566118",
+          "name": "parkingSlot",
+          "type": 30
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1447278119050181832",
+      "lastPropertyId": "10:8199497054084312098",
+      "name": "ParkingSlot",
+      "properties": [
+        {
+          "id": "1:4004433275947562636",
+          "name": "parkingSlot_id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5445512833855978483",
+          "name": "slot",
+          "type": 9
+        },
+        {
+          "id": "3:7889749842632974027",
+          "name": "row",
+          "type": 9
+        },
+        {
+          "id": "4:2447129982945772728",
+          "name": "column",
+          "type": 9
+        },
+        {
+          "id": "5:8664610606300634899",
+          "name": "floorId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "31:1739333400651269838",
+          "relationTarget": "Floor"
+        },
+        {
+          "id": "6:3905393367183710944",
+          "name": "booked",
+          "type": 1
+        },
+        {
+          "id": "7:4728873763546749348",
+          "name": "occupied",
+          "type": 1
+        },
+        {
+          "id": "8:3405854983261207566",
+          "name": "parkingId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "4:2651018284748385542"
+        },
+        {
+          "id": "9:5810672273070186193",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "10:8199497054084312098",
+          "name": "vehicleCategory",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:6137681957738664380",
+      "lastPropertyId": "4:5785649396079227188",
+      "name": "VehicleCategory",
+      "properties": [
+        {
+          "id": "1:6614355452595718791",
+          "name": "vehicle_id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7439176175788849727",
+          "name": "vehicleId",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "9:1494386577344323373"
+        },
+        {
+          "id": "3:9101492489031767125",
+          "name": "vehicleCategory",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:6137681957738664380",
+  "lastIndexId": "31:1739333400651269838",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    2231622248403591049,
+    7900774532816313302,
+    1201670493992962859,
+    7945641014897832099,
+    687281975521563842,
+    6317099880820078587,
+    294905706815106038,
+    6038016130790354953,
+    6002998727412931250,
+    2587115897975819098,
+    8608450748937310547,
+    886576024407023871,
+    2876619269300137275,
+    6609891025784941206,
+    7211149321213436696,
+    1373436883910093823,
+    264008564993784529,
+    2257251911460325238,
+    6719097815452023746,
+    3526239402305283542,
+    4416743340612750253,
+    1602711531246250770,
+    7099327027024507231,
+    6577319444978199432,
+    1482988282759774826
+  ],
+  "retiredPropertyUids": [
+    5785649396079227188,
+    7278019983415502964
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
